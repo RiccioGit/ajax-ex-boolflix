@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Titolo -->
+    <title>BoolFlix</title>
+
+    <!-- J Query -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Moments -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+    <!-- Link al mio CSS -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d4368e456d.js" crossorigin="anonymous"></script>
+    
+    <!-- HandleBars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <script id="movie_template" type="text/x-handlebars-template">
+
+      <li id="movie"> <span>Titolo:</span> {{title}} <span>Titolo originale:</span> {{originalTitle}} <span>Lingua:</span> {{language}} <span>Voto:</span> {{rate}}</li>
+
+    </script>
+  </head>
+
+
+  <body>
+
+    <div class="input_container">
+
+      <input id="search" type="text" name="search" value="">
+      <button id="btn" type="button" name="button">Search</button>
+
+    </div>
+
+    <ul id="movies">
+
+
+    </ul>
+
+
+
+    <script src="./myscript.js">
+
+    </script>
+  </body>
+</html>
